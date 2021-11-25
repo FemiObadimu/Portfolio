@@ -23,6 +23,7 @@ function App() {
           <Route exact path="/portfolio" component={Portfolio} />
           <Route exact path="/services" component={Services} />
           <Route exact path="/contact" component={Contact} />
+
           <Route exact path="*" component={NotFound4O4} />
         </Switch>
         <Footer />

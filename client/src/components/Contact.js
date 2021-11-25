@@ -30,7 +30,7 @@ const Contact = () => {
     setForm(false);
 
     let xhr = new XMLHttpRequest();
-    xhr.open("POST", "/");
+    xhr.open("POST", "/send");
     xhr.setRequestHeader("content-type", "application/json");
     xhr.onload = function () {
       if (xhr.responseText === "success") {

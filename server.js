@@ -4,18 +4,18 @@ const nodemailer = require("nodemailer");
 const config = require("config");
 const username = config.get("PORTFOLIO_USERNAME");
 const password = config.get("PORTFOLIO_PASSWORD");
-
+const path = require("path");
 const PORT = process.env.PORT || 5000;
 
 // Middlewares
 app.use(express.static("client"));
 app.use(express.json());
 
-app.get("/", (req, res) => {
+app.get("/send", (req, res) => {
   res.sendFile(__dirname + "/client/public/index.html");
 });
 
-app.post("/", (req, res) => {
+app.post("/send", (req, res) => {
   const output = `
   Hi There, Femi Obadimu (The Crtitcal Thinker)
   My Name is ${req.body.name}, I'm a/an ${req.body.subject}.
@@ -31,8 +31,8 @@ app.post("/", (req, res) => {
     port: 465,
     host: "smtp.gmail.com",
     auth: {
-      user:  username,
-      pass: passwordnp,
+      user: username,
+      pass: password,
     },
   });
 
@@ -53,6 +53,14 @@ app.post("/", (req, res) => {
     }
   });
 });
+
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("client/build"));
+
+  app.get("*", (req, res) =>
+    res.sendFile(path.resolve(__dirname, "client", "build", "index.html"))
+  );
+}
 
 app.listen(PORT, () => {
   console.log(`Server started on PORT ${PORT}`);
