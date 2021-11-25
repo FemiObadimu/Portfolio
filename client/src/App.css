@@ -1,0 +1,353 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  background-color: black;
+  overflow-x: hidden;
+  font-family: Mukta;
+}
+
+.hr {
+  color: #c0c0c0;
+}
+
+/*--------------------------------------------------------------
+# Nav Styles
+--------------------------------------------------------------*/
+
+#toggle {
+  border: none;
+}
+
+.link {
+  text-decoration: none;
+  color: #9e9d9d;
+}
+.link:hover {
+  text-decoration: none;
+  color: #9e9d9d;
+}
+
+/*--------------------------------------------------------------
+# Home Styles
+--------------------------------------------------------------*/
+:root {
+  --gradient: linear-gradient(320deg, rgb(255, 0, 55), rgb(1, 19, 79), #cac2c2);
+}
+
+.logo-text {
+  padding: 0px 5px;
+  font-size: 40px;
+  font-weight: 600;
+  background-image: var(--gradient);
+  background-size: 400%;
+  background-clip: text;
+  color: transparent;
+  animation: glow 2s infinite alternate;
+}
+
+.home-icon {
+  color: rgb(216, 4, 50);
+}
+
+.home-image {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 100%;
+  margin: 30px 0px;
+  height: 50vh;
+  background-size: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(components/images/femi.png);
+}
+
+.home {
+  margin-top: -5px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.glowing-credit {
+  font-weight: 600;
+  background-image: var(--gradient);
+  background-size: 400%;
+  background-clip: text;
+  color: transparent;
+  animation: glow 3s infinite alternate;
+}
+
+.glowing-text-home {
+  overflow: hidden !important;
+  margin-bottom: -10px;
+  font-size: 50px;
+  font-weight: 600;
+  background-image: var(--gradient);
+  background-size: 400%;
+  background-clip: text;
+  color: transparent;
+  animation: glow 3s infinite alternate;
+}
+
+@keyframes glow {
+  0% {
+    background-position: top;
+  }
+
+  100% {
+    background-position: right;
+  }
+}
+
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+.introduction {
+  padding: 0px 20px;
+  margin: 30px 0px;
+}
+
+.name {
+  color: #9e9d9d;
+  padding: 40px 0px 0px 0px;
+  font-size: 30px;
+  font-weight: 500;
+}
+.upglows {
+  font-size: 40px;
+}
+
+.intro-text {
+  margin: 20px 0px;
+  color: #9e9d9d;
+}
+
+.btn-text {
+  background-color: black !important;
+  color: #9e9d9d !important;
+  border: 1px solid rgb(216, 4, 50) !important;
+}
+
+.btn-text:hover {
+  background-color: black !important;
+  color: #9e9d9d !important;
+  border: 1px solid rgb(216, 4, 50) !important;
+}
+
+.btn-text:focus {
+  background-color: black !important;
+  color: #9e9d9d !important;
+  border: 1px solid rgb(216, 4, 50) !important;
+}
+
+.intro-btn {
+  margin: 30px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+}
+
+.linksicon {
+  color: #c0c0c0;
+}
+
+.linksicon:hover {
+  color: #c0c0c0;
+}
+
+.glowing-text {
+  margin-bottom: -10px;
+  font-size: 50px;
+  font-weight: 600;
+  background-image: var(--gradient);
+  background-size: 400%;
+  background-clip: text;
+  color: transparent;
+  animation: glow 3s infinite alternate;
+}
+
+.ficazzo {
+  margin: 30px 0px;
+  text-align: center;
+  width: 270px;
+  height: 270px;
+  border-radius: 20px;
+  border: 2px solid #c0c0c0;
+}
+
+.icon-box {
+  color: #c0c0c0;
+  margin: 30px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.technology {
+  padding: 0px 20px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.img-about {
+  background-image: url(components/images/programming.svg);
+  width: 100%;
+  height: 400px;
+  background-size: contain;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/*--------------------------------------------------------------
+# Testimonials
+--------------------------------------------------------------*/
+
+.carouselz {
+  margin: 250px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-image {
+  width: 50px;
+  height: 50px;
+  filter: opacity(0%);
+}
+
+/*--------------------------------------------------------------
+# Services
+--------------------------------------------------------------*/
+
+.icon-services {
+  color: rgb(255, 0, 55);
+  font-size: 40px;
+}
+
+.service-bg {
+  padding: 40px 20px;
+  border-radius: 10px;
+  color: #c0c0c0;
+}
+.service-text {
+  overflow: hidden;
+}
+
+.service-icon {
+  padding-left: 10px 0px;
+}
+
+.service-tag {
+  padding: 5px 0px;
+  overflow: hidden;
+}
+
+/*--------------------------------------------------------------
+# PortFolio
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+.contact-image {
+  background-image: url(components/images/mail.svg);
+  width: 100%;
+  height: 400px;
+  background-size: contain;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.form-control {
+  background-color: black !important;
+  color: #ffffff !important;
+  border: none !important;
+  border-bottom: 1px solid #c0c0c0 !important;
+  box-shadow: inset 0 0 #424242 !important;
+}
+.form-control:focus {
+  background-color: black !important;
+  color: #ffffff !important;
+  outline: none !important;
+  border: none !important;
+  border-bottom: 1px solid #c0c0c0 !important;
+  box-shadow: inset 0 0 #424242 !important;
+}
+
+.contact-submit {
+  font-weight: normal;
+  color: #c0c0c0 !important;
+  background: none !important;
+}
+
+.btn-gradient {
+  background: var(--gradient) !important;
+  border: 1px solid black !important;
+}
+
+.btn-send {
+  background: black !important;
+  color: #9e9d9d;
+  border: 1px solid rgb(216, 4, 50) !important;
+}
+
+.not-found {
+  background-image: url(components/images/404.svg);
+  width: 100%;
+  height: 400px;
+  background-size: contain;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.ball-triangle {
+  color: rgb(255, 0, 55);
+}
+
+.null {
+  display: none;
+}
+
+/*--------------------------------------------------------------
+# Media Queries
+--------------------------------------------------------------*/
+@media screen and (max-width: 700px) {
+  .logo-text {
+    margin: 0px 0px 0px -5px;
+  }
+  .about-images1 {
+    display: none;
+  }
+  .about-images2 {
+    display: block;
+    width: 100%;
+    border: none;
+
+    filter: brightness(150%), contrast(100%);
+    height: 500px;
+    border-radius: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .glowing-text-home {
+    text-align: center;
+    margin-bottom: -10px;
+    font-size: 30px;
+    font-weight: 600;
+    background-image: var(--gradient);
+    background-clip: text;
+    color: transparent;
+    animation: glow 3s infinite alternate;
+  }
+}
